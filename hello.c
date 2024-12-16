@@ -88,7 +88,7 @@ int main() {
     // Porta NOT su "C"
     int notC = NOT(C)
     // Porta or su "C+C"
-    int orCC = OR(C, C);
+    int orCC = OR(notC, C);
 
     // Porta AND su "(A*B)*C"
     int andABC = AND(andAB, orCC);
@@ -96,7 +96,7 @@ int main() {
     // Porta NOT su "D"
     int notD = NOT(D)
     // Porta OR su "D+D"
-    int orD = OR(D, D);
+    int orD = OR(notD, D);
 
     // Porta AND su "((A*B)*C)*D)"
     int andABCD = AND(andABC, orD);
@@ -108,6 +108,11 @@ int main() {
 
     // porta AND su "(((A*B)*C)*D)*E"
     int andABCDE = AND(andABCD, orD);
+
+    // Porta NOT su "F"
+    int notF = NOT(F)
+    // Porta OR su "D+D"
+    int orF = OR(F, F);
 
 
 
