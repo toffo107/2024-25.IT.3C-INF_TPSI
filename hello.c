@@ -22,7 +22,7 @@ int OR(int a, int B) {
 
 int main() {
     // Dichiara una variabile
-    int A, B;
+    int A, B, C, D, E, F;
 
     // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Inserisci il valore di A (0 o 1):\n");
@@ -66,11 +66,16 @@ int main() {
     // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Hai inserito il valore F: %d\n", F);
 
-    if (A != 0 && A != 1 && B != 0 && B != 1 && C != 0 && C != 1 && D !=) 0 && D!= 1 && E != 0 && E != 1 && F != 0 && F != 1) {
-        printf("I valori inseriti non sono 1 o 0\n");
-    } else {
+    if (A != 0 && A != 1 && B != 0 && B != 1 && C != 0 && C != 1 && D != 0 && D!= 1 && E != 0 && E != 1 && F != 0 && F != 1) {
+        printf("I valori inseriti non sono 1 o 0\n"); 
+    
+    
+    else {
+
         // Procediamo con l'esecuzione solo se il numero è 1 o 0
         printf("I valori inseriti sono 1 o 0\n");
+    
+    }
 
     // Porta NOT su "A"
     int notA = NOT(A);
@@ -116,6 +121,8 @@ int main() {
 
     // porta AND su "((((A*B)*C)*D)*E)*F"
     int andABCDEF = AND(andABCDE, orFF);
+
+    printf(andABCDEDF);
 
     }
 
